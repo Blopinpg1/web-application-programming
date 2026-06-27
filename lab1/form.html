@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student registration form</title>
+    <link rel="stylesheet" href="formstyle.css">
+  </head>
+  <body>
+    <h1 id="form-title">Student Registration Form</h1>
+    <form id="form" >
+      <label for="Username" id="usernamefield">Username:</label> <br />
+      <input type="text" required pattern="[A-Za-z\s]{6,50}" id="username" />
+      <!-- regex pattern -->
+      <br />
+      <br />
+      <label for="Email">Email:</label> <br />
+      <input type="email" required />
+      <br />
+      <br />
+      <label for="Password">Password:</label> <br />
+      <input type="password" required pattern=".{6,}" />
+      <!-- regex pattern j sukai accept garx -->
+      <br />
+      <br />
+      <label for="Age" >Age:</label> <br />
+
+      <input type="number" id="age"  />
+      <div id="display-log">
+         ❌The age should be greater than 16
+      </div>
+      <br />
+      <br />
+      <label for="Gender">Gender:</label> <br />
+
+      <input type="radio" name="gender" value="male" id="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" value="female" id="female" />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" value="other" id="required" />
+      <label for="other">Other</label>
+      <br />
+      <br />
+      <label for="Hobbies:">Hobbies:</label>
+      <label for="reading">Reading</label>
+      <input type="checkbox" name="reading" id="reading" />
+      <label for="reading">Writing</label>
+
+      <input type="checkbox" name="writing" id="writing" />
+      <label for="reading">Singing</label>
+
+      <input type="checkbox" name="singing" id="singing" />
+
+      <br />
+      <br />
+      <label for="select course">Select course:</label>
+      <select name="course" id="course" required>
+        <option value="math">math</option>
+        <option value="science">science</option>
+        <option value="physics">physics</option>
+        <option value="social">social</option>
+      </select>
+
+      <br />
+      <br />
+      <input type="checkbox" name="terms" id="terms" required />
+      <label for="terms" id="terms">I have read the terms and conditions</label>
+      <br />
+      <br />
+      <button type="submit" >Register</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

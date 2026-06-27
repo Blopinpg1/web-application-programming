@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.writerblog-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;
+
+}
+
+.postheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 6px;
+  margin-right: 6px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.blog-header {
+  font-weight: 300;
+  letter-spacing: 3px;
+
+  display: flex;
+  justify-content: center; /* horizontal axis  */
+  align-items: center; /*   vertical axis */
+  height: 80px;
+  font-size: 30px;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-left: 8px;
+}
+
+.number {
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.blog-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  /* auto means content size and 1fr ma 1 fraction of the right side  huncha*/
+  gap: 40px;
+  padding: 40px;
+  align-items: start;
+}
+
+.blog-images {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  row-gap: 15px;
+  column-gap: 30px;
+  margin-bottom: 20px;
+}
+
+.blog-images img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.large-image {
+  margin-top: 10px;
+  width: 100%;
+  object-fit: cover;
+  grid-column: 1 / -1;
+  aspect-ratio: 2 / 1;
+}
+.blog-text {
+  color: brown;
+  font-weight: 400;
+  text-align: left;
+  padding: 20px; /* space inside the box */ /* optional: light gray background */
+  border-radius: 5px; /* optional: slightly rounded corners */
+  text-wrap: pretty;
+}
+.img-title {
+  color: maroon;
+  text-align: center;
+  padding: 80px;
+  line-height: 80px;
+  font-size: 80px;
+  font-weight: 400;
+  font-family: "Sacramento", "Georgia", serif;
+}
+.next-para {
+  color: brown;
+  grid-column: 1 / -1;
+  word-wrap: pretty;
+}

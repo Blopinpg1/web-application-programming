@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <button id="myBtn">Click Me</button>
+
+    <script>
+      let btn = document.getElementById("myBtn");
+
+      btn.addEventListener("click", function (event) {
+        console.log("Event Type: " + event.type); // "click"
+        console.log("Target Element: " + event.target); // <button> element
+        console.log("Mouse X: " + event.clientX); // X coordinate
+        console.log("Mouse Y: " + event.clientY); // Y coordinate
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!-- Design a webpage layout using CSS Grid. 
+ Create a grid-based structure that includes a header, sidebar, main content area, and footer. 
+ Use grid-template-rows, grid-template-columns, gap, grid-row, and grid-column properties to arrange the layout.
+  Ensure the grid layout is clean, well-structured, and responsive. -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Student Portal</h1>
+        <div class="user">
+          <span>Welcome, Bibek</span>
+          <span class="icon">🔔</span>
+
+          <span class="icon">👤</span>
+        </div>
+      </header>
+
+      <aside class="side-bar">
+        <ul>
+          <li class="active">Dashboard</li>
+          <li>My Courses</li>
+          <li>Assignments</li>
+          <li>Attendance</li>
+          <li>Profile</li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <div class="cards">
+          <div class="card">
+            <h3>Course 1</h3>
+            <hr />
+            <p>80% Complete</p>
+            <div class="progress">
+              <span style="width: 80%"></span>
+            </div>
+            <button>View Details</button>
+          </div>
+
+          <div class="card">
+            <h3>Course 2</h3>
+            <hr />
+            <p>65% Complete</p>
+            <div class="progress">
+              <span style="width: 65%"></span>
+            </div>
+            <button>View Details</button>
+          </div>
+
+          <div class="card">
+            <h3>Upcoming Assignment</h3>
+            <hr />
+            <p>Due: Tomorrow</p>
+            <button>View Details</button>
+          </div>
+
+          <div class="card">
+            <h3>Attendance</h3>
+            <hr />
+            <p>85% Present</p>
+            <button>View Report</button>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">© 2026 ERC Dharan</footer>
+    </div>
+  </body>
+</html>

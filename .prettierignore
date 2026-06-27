@@ -1,0 +1,16 @@
+node_modules/
+dist/
+build/
+.vscode/
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.min.js
+*.bundle.js
+.DS_Store
+env/
+coverage/
+*.log
+migrations/
+staticfiles/

@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#usernamefield{
+    display: flex;
+    margin-top: 6px;
+    /* font-size: ; */
+}
+
+.display-log{
+    margin: 8px;
+    padding: 3px;
+    background-color:#ee7b7b; 
+    color: white;
+    display: none;
+
+}

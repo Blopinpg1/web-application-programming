@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced CSS Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero__tag">CSS Features Demo</div>
+    <h1 class="hero__title">Advanced <span>CSS</span></h1>
+    <p class="hero__sub">Variables · Transitions · Transforms · Animations · Pseudo-classes · Pseudo-elements · Media Queries</p>
+  </header>
+
+  <main class="container">
+
+    <!-- SECTION 1: CSS Variables -->
+    <section class="section">
+      <h2 class="section__title">01 — CSS Variables</h2>
+      <p class="section__desc">Color palette defined via <code>--var</code> tokens and applied globally.</p>
+      <div class="swatches">
+        <div class="swatch swatch--primary"><span>--primary</span></div>
+        <div class="swatch swatch--accent"><span>--accent</span></div>
+        <div class="swatch swatch--bg"><span>--bg</span></div>
+        <div class="swatch swatch--surface"><span>--surface</span></div>
+        <div class="swatch swatch--text"><span>--text</span></div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Pseudo-classes -->
+    <section class="section">
+      <h2 class="section__title">02 — Pseudo-classes</h2>
+      <p class="section__desc">Interact with the elements below to see <code>:hover</code>, <code>:focus</code>, and <code>:active</code> in action.</p>
+      <div class="pseudo-grid">
+        <button class="btn btn--hover">Hover me</button>
+        <input class="input" type="text" placeholder="Focus me…" />
+        <button class="btn btn--active">Click & Hold</button>
+      </div>
+      <ul class="list">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item <span class="badge">:nth-child(3)</span></li>
+        <li>Fourth item</li>
+      </ul>
+    </section>
+
+    <!-- SECTION 3: Pseudo-elements -->
+    <section class="section">
+      <h2 class="section__title">03 — Pseudo-elements</h2>
+      <p class="section__desc"><code>::before</code> and <code>::after</code> inject decorative content without extra HTML.</p>
+      <div class="pseudo-el-demo">
+        <div class="pe-box">Box with ::before &amp; ::after</div>
+        <blockquote class="pull-quote">Design is not just what it looks like. Design is how it works.</blockquote>
+        <p class="underline-text">Fancy animated underline via <code>::after</code></p>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Transitions & Transforms -->
+    <section class="section">
+      <h2 class="section__title">04 — Transitions &amp; Transforms</h2>
+      <p class="section__desc">Hover the cards to see <code>transition</code> and <code>transform</code> applied.</p>
+      <div class="cards">
+        <div class="card card--scale">
+          <div class="card__icon">⬡</div>
+          <h3>Scale</h3>
+          <p>transform: scale()</p>
+        </div>
+        <div class="card card--rotate">
+          <div class="card__icon">◈</div>
+          <h3>Rotate</h3>
+          <p>transform: rotate()</p>
+        </div>
+        <div class="card card--skew">
+          <div class="card__icon">◻</div>
+          <h3>Skew</h3>
+          <p>transform: skew()</p>
+        </div>
+        <div class="card card--translate">
+          <div class="card__icon">▲</div>
+          <h3>Translate</h3>
+          <p>transform: translateY()</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Keyframe Animations -->
+    <section class="section">
+      <h2 class="section__title">05 — Keyframe Animations</h2>
+      <p class="section__desc">Pure CSS <code>@keyframes</code> — no JavaScript.</p>
+      <div class="anim-grid">
+        <div class="anim-box anim--pulse">Pulse</div>
+        <div class="anim-box anim--bounce">Bounce</div>
+        <div class="anim-box anim--spin">Spin</div>
+        <div class="anim-box anim--wave">Wave</div>
+        <div class="anim-loader"><div></div><div></div><div></div></div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Responsive -->
+    <section class="section">
+      <h2 class="section__title">06 — Media Queries</h2>
+      <p class="section__desc">Resize the window to see the layout adapt.</p>
+      <div class="responsive-grid">
+        <div class="rg-item">A</div>
+        <div class="rg-item">B</div>
+        <div class="rg-item">C</div>
+        <div class="rg-item">D</div>
+        <div class="rg-item">E</div>
+        <div class="rg-item">F</div>
+      </div>
+      <div class="breakpoint-label">
+        <span class="bp bp--sm">📱 Mobile (&lt;600px)</span>
+        <span class="bp bp--md">💻 Tablet (600–1024px)</span>
+        <span class="bp bp--lg">🖥 Desktop (&gt;1024px)</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Built with pure HTML &amp; CSS &mdash; Advanced CSS Demo &copy; 2025</p>
+  </footer>
+
+</body>
+</html>

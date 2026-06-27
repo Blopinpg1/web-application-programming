@@ -1,0 +1,94 @@
+<!-- Create a webpage using HTML and CSS that displays student information in a
+tabular format. Use the
+<table>
+  ,
+  <tr>
+    ,
+    <th>, and</th>
+    <td>
+      tags to design the table with appropriate headings and at least seven rows
+      of student data. Apply CSS to style the table including borders, padding,
+      spacing, text alignment, background colors and font styling. Use alternate
+      row coloring, hover effects, and table caption styling to improve
+      readability and visual appeal. Ensure that the table is responsive and
+      maintains proper structure and alignment on different screen sizes. -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <link rel="stylesheet" href="table.css" />
+  </head>
+  <body>
+    <div class="table-container">
+      <table>
+        <caption>Current Student Enrollment - Spring 2026</caption>
+
+        <thead>
+          <tr>
+            <th>Student ID</th>
+            <th>Full Name</th>
+            <th>Faculty</th>
+            <th>GPA</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>PURO82BCT024</td>
+            <td>Bibek Oli</td>
+            <td>Computer Engineering</td>
+            <td>3.4</td>
+            <td ><span class="status  active">Enrolled</span></td>
+          </tr>
+
+          <tr>
+            <td>PURO82BME012</td>
+            <td>Helicopter fan</td>
+            <td>Mechanical Engineering</td>
+            <td>3.0</td>
+            <td ><span class="status inactive">On leave</span></td>
+          </tr>
+
+          <tr>
+            <td>PURO82BCT024</td>
+            <td>Bibek Oli</td>
+            <td>Computer Engineering</td>
+            <td>3.7</td>
+            <td><span class="status active">Enrolled</span></td>
+          </tr>
+           <tr>
+            <td>PURO82BCT024</td>
+            <td>Bibek Oli</td>
+            <td>Computer Engineering</td>
+            <td>3.4</td>
+            <td><span class="status active">Enrolled</span></td>
+          </tr>
+           <tr>
+            <td>PURO82BCT020</td>
+            <td>Random Nepali</td>
+            <td>Computer Engineering</td>
+            <td>3.4</td>
+            <td><span class="status active">Enrolled</span></td>
+          </tr>
+           <tr>
+            <td>PURO82BEI020</td>
+            <td>Hemraj K.C</td>
+            <td>Electronics Engineering</td>
+            <td>3.4</td>
+            <td><span class="status active">Enrolled</span></td>
+          </tr>
+           <tr>
+            <td>PURO82BCE02</td>
+            <td>Prem Chaudhary</td>
+            <td>Civil Engineering</td>
+            <td>3.4</td>
+            <td><span class="status inactive">On leave</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

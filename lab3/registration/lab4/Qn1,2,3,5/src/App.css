@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: black;
+}
+
+.bulb {
+  width: 200px;
+  transition: 0.3s ease;
+}
+
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #fff;
+  color: #333;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #ddd;
+}
+
+
+.status {
+  font-size: 18px;
+}
+
+.wrapper{
+  display: flex;
+  gap: 4px;
+}
+
+
+.counter-wrapper{
+  display: flex;
+  gap: 4px;
+  padding: 5px;
+}

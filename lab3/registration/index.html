@@ -1,0 +1,82 @@
+<!-- Create a registration form with the following fields: username, email, role
+(dropdown: Student or Teacher), password, confirm password, full name, email,
+password, age, gender, course and acceptance of terms and conditions. Validate
+the form according to these rules: Email must match the role: If Student → email
+must end with @student.edu.np If Teacher → email must end with @tutor.edu.np
+Confirm Password must match Password. Highlight invalid inputs with a red border
+and show error messages. Prevent form submission if any validation fails. -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form action="" id="form">
+      <label for="username">Username</label>
+      <input type="text" placeholder="kp oli" required />
+      <label for="email">Email</label>
+      <input type="email" placeholder="kp@gmail.com" id="email" required />
+      <label for="role">Role</label>
+      <select name="role" id="role" required>
+        <option value="Default">Select</option>
+        <option value="Student">Student</option>
+        <option value="Teacher">Teacher</option>
+      </select>
+      <span id="error-message"></span>
+      <label for="password">Password</label>
+      <input
+        type="password"
+        placeholder=" your password"
+        id="password"
+        required
+      />
+      <label for="confirmpassword">Confirmpassword</label>
+      <input
+        type="password"
+        placeholder="retype password"
+        id="confirmpassword"
+        required
+      />
+      <span id="confirm-error"></span>
+
+      <label for="Age">Age</label>
+      <input type="number" min="1" placeholder="your age" required />
+
+      <label for="gender">Gender</label>
+      <select name="gender" id="gender" required>
+        <option value="default">select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="course">Course</label>
+      <select name="course" id="course" required>
+        <option value="default">select</option>
+        <option value="advance python for datascience">
+          advance python for datascience
+        </option>
+        <option value="computer architecture and organization">
+          computer architecture and organization
+        </option>
+        <option value="web application programming">
+          web application programming
+        </option>
+      </select>
+
+      <div class="terms-container">
+        <input type="checkbox" name="terms" id="terms" required />
+        <label for="terms">
+          I agree to the
+          <a href="#">Terms and Conditions</a>
+        </label>
+      </div>
+      <button type="submit" id="main-submit">Register</button>
+    </form>
+  </body>
+</html>

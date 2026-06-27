@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic List Controller</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1 class="title">Dynamic List Controller</h1>
+
+    <div class="buttons-wrapper">
+      <button id="additem">Add Item</button>
+      <button id="removeitem">Remove Last Item</button>
+    </div>
+
+    <div class="input_section" id="input_section">
+      <input
+        type="text"
+        id="new-item-input"
+        placeholder="Enter new item text"
+      />
+      <button class="add_btn" id="add_btn">ADD</button>
+    </div>
+
+    <div class="list_container">
+      <ul id="item_list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
+  </body>
+</html>

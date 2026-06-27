@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: x-large;
+  text-align: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: blueviolet;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+}
+
+.nav-links a {
+  color: white;
+  border-radius: 4px;
+  padding: 8px;
+
+  font-weight: bold;
+  background-color: rgb(14, 145, 145);
+
+  text-decoration: none;
+}
+
+.card-box {
+  display: flex;
+  background-color: white;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  flex-wrap: wrap; /* VERY IMPORTANT */
+  padding: 20px;
+}
+
+.card {
+   display: flex;
+  flex-wrap: wrap;   /* ADD THIS */
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+}
+.card div {
+  flex: 1 1 250px;
+  max-width: 300px;
+  height: 300px;
+  background-color: rgb(14, 145, 145);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .card-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}

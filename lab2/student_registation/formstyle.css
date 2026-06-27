@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+
+}
+
+
+
+body{
+    background-color: #e0e0e0;
+  
+}
+
+
+#form-title{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+#display-log{
+    background-color: red;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+hobbies_checkbox_section{
+    margin-bottom: 10px;
+}
+
+
+.gender-radio-section{
+  gap: 10px;
+    padding: 2px;
+}
+
+
+select{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.terms_and_conditions{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.hobby_checkbox_selection{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+
+button{
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover{
+    
+    background-color: #45a049;
+}
+
+.success-message {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  animation: slideDown 0.3s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}

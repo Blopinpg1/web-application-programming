@@ -1,0 +1,58 @@
+<!-- 5. Create a webpage using HTML only that displays student
+information in a tabular format. Use the <table>, <tr>, <th>, and
+<td> tags to design the table with appropriate headings and rows.
+Include at least three rows of data and use attributes such as
+border, cellpadding, and cellspacing to improve table readability.
+Ensure the table is properly structured and easy to understand. -->.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+table, th, td {
+  border:1px solid black;
+}
+</style> -->
+</head>
+<body>
+    <table border="1" cellpadding ="10" cellspacing = "5">
+        <h1>A table of student marks in subjects</h1>
+
+        <thead>
+            <tr>
+                <th colspan="2">Name</th>
+            </tr>
+            <tr>
+                <th colspan="2">Ram</th>
+            </tr>
+            <tr>
+                <th >Subject</th>
+                <th>Marks</th>
+            </tr>
+
+        </thead>
+            <tbody>
+                <tr>
+    
+                    <td>Math</td>
+                    <td>60</td>
+                </tr>
+    
+                <tr>
+                    <td>Science</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>74</td>
+                </tr>
+            </tbody>
+
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(44, 44, 44);
+}
+
+body::-webkit-scrollbar {
+  display: none;  
+}
+
+/* nav seciton  ho yo  */
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(54, 56, 56);
+  padding: 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+/* hero seciton  */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  align-items: center;
+  color: white;
+  padding: 50px;
+}
+
+.hero-text h2 {
+  font-size: 30px;
+  line-height: 40px;
+  padding: 10px;
+}
+
+.hero-text h1 {
+  font-size: 90px;
+  line-height: 110px;
+  padding: 10px;
+}
+
+/* button  */
+.view-projects-button {
+  margin-left: 15px;
+}
+.view-projects-button button {
+  background-color: rgb(54, 56, 56);
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.hero-image img {
+  max-width: 380px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* project section */
+.projects-section h1 {
+  font-size: 100px;
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  top: 8px;
+  left: 100px;
+  position: relative;
+  width: 500px;
+  height: 250px;
+}
+
+/* about-me section */
+
+.about-me {
+  height: 400px;
+  width: 80%;
+  overflow: hidden;
+  font-size: xx-large;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px;
+  margin-bottom: 100px;
+}
+.about-me p {
+  margin-top: 20px;
+  text-align: pretty;
+}
+
+/* project section */
+
+.project {
+  position: absolute;
+  width: 150px;
+  height: 220px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.project:nth-child(1) {
+  left: 0px;
+  z-index: 1;
+}
+.project:nth-child(2) {
+  left: 70px;
+  z-index: 2;
+}
+.project:nth-child(3) {
+  left: 140px;
+  z-index: 3;
+}
+.project:hover {
+  transform: translateY(-20px) scale(1.1);
+  z-index: 100; /* Bring to front */
+}

@@ -1,0 +1,40 @@
+let str = "hello, world!   ";
+let str2 = new String("Hello, world!   ");
+let str3 = String("hello, world!   ");
+console.log(str);
+console.log(str2);
+console.log(str3);
+
+console.log(str.length);
+console.log(str2.length);
+console.log(str2.charAt(1));
+console.log(str2.includes("world"));
+console.log(str2.includes("world", 7));
+console.log(str2.indexOf("world"));
+console.log(str2.indexOf("o"));
+console.log(str2.lastIndexOf("o"));
+console.log(str2.slice(7, 12));
+console.log(str2.slice(7, -4)); // -ve counts from last. -1 = last, -2 = 2nd last
+console.log(str.substring(7, 12));
+console.log(str.substring(12, 7)); //if a> b, swaps
+console.log(str.substring(7, -1));
+console.log(str.split(","));
+console.log(str.toUpperCase());
+console.log(str);
+console.log(str.trim());
+console.log(str.trim().length);
+console.log(str.replace("world", "javascript"));
+console.log(str);
+console.log(str.startsWith("hello"));
+console.log(str.endsWith(" "));
+console.log(str.endsWith("world"));
+console.log(str.endsWith("world", 12));
+
+// let country = "Nepal";
+// let city = "Lalitpur";
+// let address = city.concat(", ", country, "!");
+// console.log(address);
+
+// let num = "2";
+// console.log(num.padStart(3, "0")); // 002
+// console.log(num.padEnd(4, "0")); // 2000
